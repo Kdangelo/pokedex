@@ -1,4 +1,4 @@
-let display = document.querySelector('.display');
+let display = document.getElementById('searchResults');
 
 fetch('https://pokeapi.co/api/v2/pokemon/?limit=20&offset=500')
   .then(function(response) {
