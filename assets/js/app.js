@@ -1,7 +1,3 @@
- /*$.get('https://pokeapi.co/api/v2/pokedex', function(r) {
-   console.log(r);
-})*/
-
 let display = document.querySelector('.display');
 
 fetch('https://pokeapi.co/api/v2/pokemon/?limit=20&offset=500')
@@ -20,3 +16,6 @@ fetch('https://pokeapi.co/api/v2/pokemon/?limit=20&offset=500')
     display.innerHTML = html;
   });
 
+$.getJSON('https://pokeapi.co/api/v2/pokemon-species', function(r) {
+  console.log(r);
+});
